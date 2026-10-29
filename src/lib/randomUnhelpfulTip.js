@@ -5,7 +5,7 @@ export const tip = [
     'Ketey IDE is based off the source code of Snail IDE, Snail IDE is based off the source code of PenguinMod, which is based off TurboWarp, which is based off Scratch. M O D C E P T I O N.',
     'Crazy? I was crazy once. They locked me in a room, a rubber room. A rubber room with rats. And rats make me crazy.',
     "Ketey IDE.",
-    "I LOVE SCRATCH!!!",
+    "I LOVE SCRATCH MODS!!!",
     "In 1 Million, literally nothing will happen.",
     "Did you know? You can post your projects outside of the Ketey IDE community.",
     "number 21 mcdonalds foot lettuce",
