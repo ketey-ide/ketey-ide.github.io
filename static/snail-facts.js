@@ -3,11 +3,11 @@
     // I LOVE CATS
     
     const catFacts = [
-        'Snail IDE used to be based off of DevBlocks',
+        'Ketey IDE used to be based off of DevBlocks',
         'If you go to https://snail-ide.github.io/1.0/ you can use old Snail IDE',
-        'Snail IDE is based off of PenguinMod',
-        'Try out plungermod.',
-        'Snails are real 💀'
+        'Ketey IDE is based off of Snail IDE',
+        'Try out Circle IDE.',
+        'Dogs are real 💀'
     ];
     
     let catBreeds = [
