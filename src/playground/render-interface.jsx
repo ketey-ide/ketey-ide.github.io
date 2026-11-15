@@ -73,7 +73,7 @@ const handleClickAddonSettings = () => {
 
 const messages = defineMessages({
     defaultTitle: {
-        defaultMessage: 'A mod of PenguinMod',
+        defaultMessage: 'A mod of Snail IDE',
         description: 'Title of homepage',
         id: 'tw.guiDefaultTitle'
     }
@@ -118,8 +118,8 @@ const Footer = () => (
             <div className={styles.footerText}>
                 <FormattedMessage
                     // eslint-disable-next-line max-len
-                    defaultMessage="PenguinMod, Snail IDE, and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
-                    description="Disclaimer that PenguinMod, Snail IDE, and TurboWarp are not connected to Scratch"
+                    defaultMessage="PenguinMod, Snail IDE, Ketey IDE, and TurboWarp are not affiliated with Scratch, the Scratch Team, or the Scratch Foundation."
+                    description="Disclaimer that PenguinMod, Ketey IDE, Snail IDE, and TurboWarp are not connected to Scratch"
                     id="tw.footer.disclaimer"
                 />
             </div>
@@ -148,7 +148,7 @@ const Footer = () => (
                     </a>
                 </div>
                 <div className={styles.footerSection}>
-                    <a href="https://studio.penguinmod.site/PenguinMod-Packager">
+                    <a href="https://studio.penguinmod.com/PenguinMod-Packager">
                         {/* Do not translate */}
                         {'PenguinMod Packager'}
                     </a>
@@ -170,7 +170,7 @@ const Footer = () => (
                             id="tw.footer.parameters"
                         />
                     </a>
-                    <a href="https://docs.snail-ide.com/">
+                    <a href="https://docs.ketey-ide.com/">
                         <FormattedMessage
                             defaultMessage="Documentation"
                             description="Link in footer to additional documentation"
@@ -200,7 +200,7 @@ const Footer = () => (
                             id="tw.privacy"
                         />
                     </a>
-                    <a href="https://snail-ide.js.org/examples/">
+                    <a href="https://ketey-ide.github.io/examples/">
                         <FormattedMessage
                             defaultMessage="Example Projects"
                             description="Link to example projects"
@@ -214,21 +214,21 @@ const Footer = () => (
                             id="tw.livetests"
                         />
                     </a>
-                    <a href="https://scratch.mit.edu/studios/33532977/">
+                    <a href="https://scratch.mit.edu/studios/52163586/">
                         <FormattedMessage
                             defaultMessage="Scratch Studio"
                             description="Link to scratch studio"
                             id="tw.snail-studio"
                         />
                     </a>
-                    <a href="https://scratch.mit.edu/discuss/topic/689165/">
+                    <a href="https://scratch.mit.edu/discuss/topic/913623/">
                         <FormattedMessage
                             defaultMessage="Scratch Forum Topic"
-                            description="Link to the Scratch forum topic for Snail IDE"
+                            description="Link to the Scratch forum topic for Keteu IDE"
                             id="si.scratch-forum-topic"
                         />
                     </a>
-                    <a href="https://snailshare.vercel.app">
+                    <a href="https://keteyshare.vercel.app">
                         <FormattedMessage
                             defaultMessage="Homepage"
                             description="Link to homepage"
@@ -294,7 +294,7 @@ class Interface extends React.Component {
                 <iframe
                     id='login'
                     style={{ display: 'none' }}
-                    src={`https://snailshare.vercel.app/embed/editor?external=${window.location}`}
+                    src={`https://keteyshare.vercel.app/embed/editor?external=${window.location}`}
                 ></iframe>
                 {isHomepage ? (
                     <div className={styles.menu}>
@@ -355,7 +355,7 @@ class Interface extends React.Component {
                             {(window.LastFetchedProject) != null && (window.LastFetchedProject.remix != null) ? (
                                 <div className={styles.unsharedUpdate}>
                                     <div style={{ display: "flex", flexDirection: "row" }}>
-                                        <a style={{ height: "32px" }} target="_blank" href={"https://snailshare.vercel.app/profile?user=" + projectDetailCache[String(window.LastFetchedProject.remix)]?.owner}><img style={{ marginRight: "4px", borderRadius: "4px" }} width="32" height="32" title={projectDetailCache[String(window.LastFetchedProject.remix)]?.owner} alt={projectDetailCache[String(window.LastFetchedProject.remix)]?.owner} src={"https://snailshare.dreamhosters.com/api/pmWrapper/scratchUserImage?username=" + projectDetailCache[String(window.LastFetchedProject.remix)]?.owner}></img></a>
+                                        <a style={{ height: "32px" }} target="_blank" href={"https:/keteyshare.vercel.app/profile?user=" + projectDetailCache[String(window.LastFetchedProject.remix)]?.owner}><img style={{ marginRight: "4px", borderRadius: "4px" }} width="32" height="32" title={projectDetailCache[String(window.LastFetchedProject.remix)]?.owner} alt={projectDetailCache[String(window.LastFetchedProject.remix)]?.owner} src={"https://snailshare.dreamhosters.com/api/pmWrapper/scratchUserImage?username=" + projectDetailCache[String(window.LastFetchedProject.remix)]?.owner}></img></a>
                                         <p>Thanks to <b><a target="_blank" href={"https://snailshare.vercel.app/profile?user=" + projectDetailCache[String(window.LastFetchedProject.remix)]?.owner}>{projectDetailCache[String(window.LastFetchedProject.remix)]?.owner}</a></b> for the original project <b><a href={window.location.origin + "/#" + projectDetailCache[String(window.LastFetchedProject.remix)]?.id}>{projectDetailCache[String(window.LastFetchedProject.remix)]?.name}</a></b>.</p>
                                     </div>
                                     <div style={{ display: 'none' }}>{getProjectDetailsById(window.LastFetchedProject.remix).yesIDefinetlyKnowHowToUseReactProperlyShutUp}</div>
@@ -409,9 +409,9 @@ class Interface extends React.Component {
                                 <p>
                                     <FormattedMessage
                                         // eslint-disable-next-line max-len
-                                        defaultMessage="Snail IDE is a mod of Penguinmod to add new blocks and features either in extensions or in Snail IDE's main toolbox. PenguinMod is a TurboWarp mod that adds features for advanced use. Try it out by choosing an uploaded project below or making your own in the editor."
-                                        description="Description of PenguinMod and TurboWarp"
-                                        id="tw.home.description"
+                                        defaultMessage="Ketey IDE is a mod of Snail IDE compiles filess to JavaScript/Github to make them run really fast. Snail IDE is a mod of Penguinmod to add new blocks and features either in extensions or in Snail IDE's main toolbox. PenguinMod is a TurboWarp mod that adds features for advanced use. Try it out by choosing an uploaded project below or making your own in the editor."
+                                        description="Description of  Snail IDE and PenguinMod and TurboWarp"
+                                        id=message
                                     />
                                 </p>
                             </div>
