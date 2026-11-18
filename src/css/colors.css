@@ -15,6 +15,7 @@ $ui-black-transparent: var(--ui-black-transparent, $ui-black-transparent-default
 $text-primary: var(--text-primary, hsla(225, 15%, 40%, 1)); /* #575E75 */
 $text-primary-transparent: hsla(225, 15%, 40%, 0.75);
 
+/* Pink top-bar theme */
 $motion-primary: hsla(330, 85%, 62%, 1); /* #F65CB4 */
 $motion-tertiary: hsla(330, 70%, 48%, 1); /* #D92E8F */
 $motion-transparent: hsla(330, 85%, 62%, 0.35); /* 35% transparent version of motion-primary */
